@@ -1,0 +1,17 @@
+
+src_dir: public/javascripts/
+
+src_files:
+    - 'bubble_sort.js'
+
+stylesheets:
+
+helpers:
+
+spec_files:
+   - '**/*[sS]pec.js'
+   - '**/*.js'
+   - '**/**/.js'
+
+
+spec_dir: spec/javascripts
