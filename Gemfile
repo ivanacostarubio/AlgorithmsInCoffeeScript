@@ -10,6 +10,11 @@ gem 'sass'
 group :development do
   gem 'foreman'
   gem 'unicorn'
+  gem 'guard'
+  gem 'therubyracer'
+  gem 'guard-coffeescript'
+  gem 'guard-livereload'
+  gem 'guard-jasmine'
   gem 'shotgun'
 end
 
@@ -17,6 +22,7 @@ group :test do
   gem 'rack-test'
   gem 'capybara'
   gem 'database_cleaner'
+ gem 'jasmine'
 end
 
 
