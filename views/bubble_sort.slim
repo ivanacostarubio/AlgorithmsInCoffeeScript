@@ -8,23 +8,21 @@ html
     script src='http://use.typekit.com/ime1wir.js' type='text/javascript'
     script src='/javascripts/bubble_sort.js' type='text/javascript'
     script src='/javascripts/bubble_sort_play.js' type='text/javascript'
-    javascript:
-      try{Typekit.load();}catch(e){}
 
   body
     header
       h1 Bubble Sort <small> a simple naive sorting algorithm </small>
-    .wrapper 
-
+    .wrapper
 
       input type="text" name="example_input" class="example_input" placeholder="See this algorithm in Action by putting some numbers here separated by ,. For Example 4,6,2,1"
       div.play
         p play
 
-      == CodeRay.scan(@implementation, :javascript).div
-
       div.example
        div.results
+
+      == CodeRay.scan(@coffee, :ruby ).div
+      == CodeRay.scan(@js, :javascript).div
 
 
     footer

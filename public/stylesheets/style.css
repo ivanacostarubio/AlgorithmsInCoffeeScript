@@ -32,6 +32,15 @@ h1
   float: left;
 }
 
+.play
+{
+  float: right;
+  margin-right: 10em;
+  border: 1px #ccc solid;
+  padding: .3em;
+  background: #999;
+}
+
 input
 {
   border: 1px solid #ccc;
@@ -42,9 +51,14 @@ input
 }
 
 .results{
-  float: right;
-  width: 50%;
+  float: left;
+  margin-top: 2em;
+  width: 930px;
+  height: 400px;
+  overflow: hidden;
+  display: none;
 }
+
 
 footer{
   position: fixed;
@@ -76,12 +90,21 @@ small
   float: left;
   margin-bottom: 40px;
 }
+
+.barras:hover
+{
+  background-color: DodgerBlue;
+}
+
 .barras
 {
   position: relative;
   bottom: 1px;
-  background-color: #ccc;
+  background-color: ghostWhite;
+  border: 1px #ccc solid;
+  margin: 3px;
   width: 50px;
   font-size: 1em;
+  text-align: center;
 
 }

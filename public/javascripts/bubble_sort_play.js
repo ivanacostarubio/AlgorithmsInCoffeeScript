@@ -35,7 +35,7 @@
       var currentChild;
       if (children.length > 0) {
         currentChild = children.shift();
-        return $(currentChild).fadeIn("slow", function() {
+        return $(currentChild).fadeIn(100, function() {
           Grapher.fadeThemout(children);
           if (children.length > 1) {
             return Grapher.face(currentChild);
@@ -58,7 +58,7 @@
       _results = [];
       for (_i = 0, _len = rrr.length; _i < _len; _i++) {
         r = rrr[_i];
-        _results.push($('.r:last').append("<div class='barras' style='float: left; height: " + (r * 20) + "px'>" + r + "</div>"));
+        _results.push($('.r:last').append("<div class='barras' style='float: left; height: " + (r * 10) + "px'>" + r + "</div>"));
       }
       return _results;
     };
@@ -70,6 +70,7 @@
   $(function() {
     return $(".play").click(function() {
       var aa, children, input_array, r, raw_array, raw_input, result, _i, _len;
+      $(".results").slideToggle(100);
       $(".results").html("");
       raw_input = $(".example_input").attr("value");
       raw_array = raw_input.split(",");
@@ -82,7 +83,6 @@
         }
         return _results;
       })();
-      console.log(input_array.length);
       result = BubblePlay.sort(input_array);
       for (_i = 0, _len = result.length; _i < _len; _i++) {
         r = result[_i];

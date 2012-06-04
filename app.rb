@@ -20,8 +20,15 @@ class App < Sinatra::Base
 
 
   get('/') do
-    @implementation = File.read("public/javascripts/bubble_sort.js")
-    slim :bubble_sort, :locals => {:implementation => @implementation}, :layout => false
+    @js= File.read("public/javascripts/bubble_sort.js")
+    @coffee= File.read("public/javascripts/bubble_sort.coffee")
+
+    slim :bubble_sort, :locals => {
+      coffee: @coffee,
+      js: @js
+    },
+      :layout => false
+
   end
 
 end
