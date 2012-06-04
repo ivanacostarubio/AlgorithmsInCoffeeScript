@@ -1,6 +1,7 @@
 (function() {
 
   describe('Bubble Sort', function() {
+    it('throws an error for invalid input | needs an array of integers');
     it('[2,1]', function() {
       var sorted;
       sorted = Bubble.sort([2, 1]);

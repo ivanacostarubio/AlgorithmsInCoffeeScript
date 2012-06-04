@@ -12,7 +12,7 @@ class Bubble
        swapped = false
        i = 1
        while i < s.length
-         if s[i - 1] > s[i]
+        if s[i - 1] > s[i]
            [ s[i], s[i - 1]] = [s[i - 1] , s[i]]
            swapped = true
          i = i + 1

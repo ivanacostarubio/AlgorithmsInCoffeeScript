@@ -1,5 +1,6 @@
 
 describe 'Bubble Sort', ->
+  it 'throws an error for invalid input | needs an array of integers'
 
   it '[2,1]', ->
     sorted = Bubble.sort([2,1])
