@@ -9,6 +9,8 @@ gem 'sass'
 gem 'coderay'
 gem 'tilt'
 
+gem 'unicorn'
+
 group :development do
   gem 'foreman'
   gem 'unicorn'
