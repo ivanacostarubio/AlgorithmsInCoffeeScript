@@ -13,6 +13,8 @@ html
     header
       h1 Bubble Sort <small> a simple naive sorting algorithm </small>
     .wrapper
+      == CodeRay.scan(@coffee, :ruby ).div
+      == CodeRay.scan(@js, :javascript).div
 
       input type="text" name="example_input" class="example_input" placeholder="See this algorithm in Action by putting some numbers here separated by ,. For Example 4,6,2,1"
       div.play
@@ -20,9 +22,6 @@ html
 
       div.example
        div.results
-
-      == CodeRay.scan(@coffee, :ruby ).div
-      == CodeRay.scan(@js, :javascript).div
 
 
     footer
