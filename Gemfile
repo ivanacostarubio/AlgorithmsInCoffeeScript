@@ -6,6 +6,8 @@ gem 'mongoid', '2.3.0'
 gem 'activemodel', '3.1.0'
 gem 'heroku'
 gem 'sass'
+gem 'coderay'
+gem 'tilt'
 
 group :development do
   gem 'foreman'
