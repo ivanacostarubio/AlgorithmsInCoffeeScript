@@ -2,10 +2,10 @@ require 'rubygems'
 require 'sinatra/base'
 require 'slim'
 require 'sass'
+require 'coderay'
 
-Mongoid.load!("config/mongoid.yml")
 
-Slim::Engine.set_default_options :sections => true
+Slim::Engine.set_default_options :sections => false
 
 class App < Sinatra::Base
 
@@ -19,6 +19,9 @@ class App < Sinatra::Base
   end
 
 
-  get('/'){ slim :layout}
+  get('/') do
+    @implementation = File.read("public/javascripts/bubble_sort.js")
+    slim :bubble_sort, :locals => {:implementation => @implementation}, :layout => false
+  end
 
 end
