@@ -1,0 +1,87 @@
+html
+{
+  font-family: Helvetica, Arial;
+}
+
+body{
+  margin: 0px
+}
+
+header{
+  border-bottom: 1px solid #ccc;
+  background-color: #f8f7ff;
+  padding: 1em 0 0 1em;
+}
+
+.wrapper{
+  padding: 1em;
+}
+
+h1
+{
+  margin-top: 0px;
+  font-weight: 300;
+}
+
+.code
+{
+  padding: 1em 0;
+  background-color: ghostWhite;
+  width: 610px;
+  overflow: auto;
+  float: left;
+}
+
+input
+{
+  border: 1px solid #ccc;
+  width: 590px;
+  height: 3em;
+  padding-left: 2em;
+
+}
+
+.results{
+  float: right;
+  width: 50%;
+}
+
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  background-color: ghostWhite;
+  font-size: .9em;
+  height: 40px;
+  border-top: 1px solid #ccc;
+  font-weight: 100;
+  padding: 1em 0 0 1em;
+}
+
+
+a, a:visited
+{
+  color: red;
+}
+
+small
+{
+
+  font-size: 60%;
+}
+
+.r
+{
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+.barras
+{
+  position: relative;
+  bottom: 1px;
+  background-color: #ccc;
+  width: 50px;
+  font-size: 1em;
+
+}
